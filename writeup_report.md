@@ -53,6 +53,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 I am using Nvidia model.
 
+```sh
 #NVIDIA Architecture
 model = Sequential()
 model.add(Lambda(lambda x: (x / 255.0) - 0.5, input_shape=(160,320,3)))
@@ -67,6 +68,7 @@ model.add(Dense(100))
 model.add(Dense(50))
 model.add(Dense(10))
 model.add(Dense(1))
+```
 
 It consists of a 5 convolution and then 3 fully connected layers  (code line 68-77) 
 
