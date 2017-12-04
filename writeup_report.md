@@ -122,6 +122,7 @@ I then recorded the vehicle recovering from the left side and right sides of the
 ![alt text][image5]
 
 Then I recorded the driving in reverse for 1 lap as well.
+
 ![alt text][image8]
 
 To augment the data sat, I also flipped images in the model.
