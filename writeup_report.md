@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image5]: ./examples/center_2017_12_03_14_34_19_149.jpg "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
-[image8]: ./examples/center_2017_12_03_14_33_53_540.png "reverse"
+[image8]: ./examples/center_2017_12_03_14_33_53_540.jpg "reverse"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -115,13 +115,13 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 ![alt text][image2]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to go back to center from the side. These images show what a recovery looks like.
 
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
 
-Then I recorded the driving in reverse for 1 lap
+Then I recorded the driving in reverse for 1 lap as well.
 ![alt text][image8]
 
 To augment the data sat, I also flipped images in the model.
