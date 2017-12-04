@@ -15,10 +15,10 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/nvidia-cnn-architecture.png "Model Visualization"
-[image2]: ./examples/center_2017_12_03_14_28_28_822.png "Center"
-[image3]: ./examples/center_2017_12_03_14_34_10_122.png "Recovery Image"
-[image4]: ./examples/center_2017_12_03_14_34_13_057.png "Recovery Image"
-[image5]: ./examples/center_2017_12_03_14_34_19_149.png "Recovery Image"
+[image2]: ./examples/center_2017_12_03_14_28_28_822.jpg "Center"
+[image3]: ./examples/center_2017_12_03_14_34_10_122.jpg "Recovery Image"
+[image4]: ./examples/center_2017_12_03_14_34_13_057.jpg "Recovery Image"
+[image5]: ./examples/center_2017_12_03_14_34_19_149.jpg "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 [image8]: ./examples/center_2017_12_03_14_33_53_540.png "reverse"
