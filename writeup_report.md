@@ -15,12 +15,13 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/nvidia-cnn-architecture.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
+[image2]: ./examples/center_2017_12_03_14_28_28_822.png "Center"
+[image3]: ./examples/center_2017_12_03_14_34_10_122.png "Recovery Image"
+[image4]: ./examples/center_2017_12_03_14_34_13_057.png "Recovery Image"
+[image5]: ./examples/center_2017_12_03_14_34_19_149.png "Recovery Image"
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
+[image8]: ./examples/center_2017_12_03_14_33_53_540.png "reverse"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -118,18 +119,15 @@ I then recorded the vehicle recovering from the left side and right sides of the
 ![alt text][image4]
 ![alt text][image5]
 
-Then I repeated this process on track two in order to get more data points.
+Then I recorded the driving in reverse for 1 lap
+![alt text][image8]
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text][image6]
-![alt text][image7]
-
-Etc ....
-
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+To augment the data sat, I also flipped images in the model.
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+After the collection process, I had 30254 number of data points. 
+
+I finally randomly shuffled the data set and put 20% of the data into a validation set. 
+
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was above 3 and under 5 as evidenced with the previous testing result (run3.mp4 vs run5.mp4) and training loss. I used an adam optimizer so that manually training the learning rate wasn't necessary.
