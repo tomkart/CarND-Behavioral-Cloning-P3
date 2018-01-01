@@ -78,6 +78,28 @@ The model includes RELU layers to introduce nonlinearity, and the data is normal
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 81). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
+To reduce overfitting, I have added dropout in the Nvidia model
+
+```sh
+#NVIDIA Architecture
+model = Sequential()
+model.add(Lambda(lambda x: (x / 255.0) - 0.5, input_shape=(160,320,3)))
+model.add(Cropping2D(cropping=((50,20),(0,0))))
+model.add(Convolution2D(24,5,5, subsample=(2,2), activation='relu'))
+model.add(Convolution2D(36,5,5, subsample=(2,2), activation='relu'))
+model.add(Convolution2D(48,5,5, subsample=(2,2), activation='relu'))
+model.add(Convolution2D(64,3,3, activation='relu'))
+model.add(Convolution2D(64,3,3, activation='relu'))
+model.add(Flatten())
+model.add(Dropout(0.2))
+model.add(Dense(100))
+model.add(Dense(50))
+model.add(Dense(10))
+model.add(Dropout(0.5))
+model.add(Dense(1))
+```
+
+
 #### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 80).
@@ -86,7 +108,9 @@ The model used an adam optimizer, so the learning rate was not tuned manually (m
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving (2 laps), recovering from the left and right sides of the road (1 lap), and in reverse direction (1 lap).
 
-For details about how I created the training data, see the next section. 
+For details about how I created the training data, see the next section.
+
+I have also corrected the image color in model.py, so that it will be the same as the image read in by drive.py.
 
 ### Model Architecture and Training Strategy
 
