@@ -159,4 +159,4 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was above 3 and under 5 as evidenced with the previous testing result (run3.mp4 vs run5.mp4) and training loss. I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
-Finally it can drive itself through the track 1. (video.mp4 / run5_v2.mp4) 
+Finally it can drive itself through the track 1 with final model with dropout. (video.mp4 / run3_dropout.mp4) 
